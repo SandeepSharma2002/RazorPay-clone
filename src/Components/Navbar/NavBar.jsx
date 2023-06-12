@@ -3,12 +3,12 @@ import RazorPayLogo from "../../assets/razorpay-icon.svg";
 
 export default function NavBar() {
   return (
-    <nav className="bg-deepBlue w-full">
-      <div className="mx-auto flex items-center justify-between gap-7 font-mullish max-w-[1080px]">
+    <nav className="bg-deepBlue w-full px-8">
+      <div className="mx-auto  flex items-center justify-between gap-7 font-mullish max-w-[1080px]">
         <a href="/" className="py-7 cursor-pointer">
           <img src={RazorPayLogo} width={"125px"} height={"30px"} alt="" />
         </a>
-        <ul className="flex items-center justify-between text-white  font-mullish space-x-6">
+        <ul className="hidden lg:flex items-center justify-between text-white  font-mullish space-x-6">
           <li className="group transition-all duration-200 py-7 relative ">
             <a
               href="#"
@@ -86,6 +86,7 @@ export default function NavBar() {
             width="28"
             height="20"
             viewBox="0 0 28 20"
+            className="hidden lg:block"
           >
             <defs>
               <filter
@@ -142,8 +143,8 @@ export default function NavBar() {
           <button className="px-5 py-3 bg-tranparent text-white border border-lightBlue rounded-sm text-sm font-bold">
             Log In
           </button>
-          <button className="flex px-5 py-3 bg-white text-lightBlue300 rounded-sm text-sm font-bold hover:text-lightBlue500 transition-all duration-200">
-            <span>Sign Up</span> 
+          <button className="px-5 py-3 bg-white text-lightBlue300 rounded-sm text-sm font-bold hover:text-lightBlue500 transition-all duration-200 hidden lg:flex">
+            <span>Sign Up</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -159,8 +160,26 @@ export default function NavBar() {
               />
             </svg>
           </button>
+          <button
+            id="__hydration_util__nav-ham-button"
+            aria-expanded="false"
+            aria-label="Open Nav Menu"
+            class="css-d4fer1 inline-block lg:hidden"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              focusable="false"
+              class="chakra-icon css-cf6w2p inline-block w-[2em] h-[2em]"
+              style={{transform: "rotate(-180deg) translateZ(0px)"}}
+            >
+              <path
+                fill="#ffffff"
+                d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
-    </nav>
+     </nav>
   );
 }

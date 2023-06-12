@@ -9,7 +9,7 @@ export default function Footer() {
       className="w-full mx-auto px-8 items-center justify-center font-mullish pt-[150px] -mt-60 -z-10"
       style={{ background: "linear-gradient(to right, #eef9fe, #edf7ff)" }}
     >
-      <div className="flex max-w-[1080px] mx-auto  pt-20 gap-8">
+      <div className="flex max-w-[1080px] mx-auto  pt-20 gap-8 flex-col lg:flex-row">
         <div class="">
           <div class="max-w-[340px]">
             <img

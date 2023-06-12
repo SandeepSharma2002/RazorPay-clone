@@ -120,8 +120,8 @@ export default function Section4() {
                 <span>Multiple Payout flow options</span>
               </li>
             </ul>
-            <div className="flex gap-3">
-              <button className="flex px-5 py-3 text-white bg-lightBlue300 font-mullish rounded-sm text-4 font-bold hover:bg-lightBlue500 transition-all duration-200 items-center gap-3">
+            <div className="flex gap-3 flex-col-reverse md:flex-row">
+              <button className="flex px-5 py-3 w-fit text-white bg-lightBlue300 font-mullish rounded-sm text-4 font-bold hover:bg-lightBlue500 transition-all duration-200 items-center gap-3 ">
                 <img alt="x" src={x} loading="lazy" class="" />
                 <span>Sign Up Now</span>
                 <svg
@@ -139,7 +139,7 @@ export default function Section4() {
                   />
                 </svg>
               </button>
-              <button className="flex px-5 py-3 text-lightBlue300 rounded-sm text-lg font-bold hover:text-lightBlue500 transition-all duration-200 items-center gap-1">
+              <button className="flex md:px-5 py-3 text-lightBlue300 rounded-sm text-lg font-bold hover:text-lightBlue500 transition-all duration-200 items-center gap-1">
                 <span> Know More</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,26 +161,27 @@ export default function Section4() {
           <img
             src={Sec}
             alt="hello"
-            className="absolute top-0 right-0 max-w-[600px]"
+            className="absolute bottom-0 right-0 hidden md:max-w-[400px] lg:max-w-[600px] lg:block md:block"
           />
         </div>
         <div className="pb-10">
           <Card1 data={data} />
         </div>
         <div className="flex flex-col">
-          <div className="flex items-center pb-12">
+          <div className=" relative flex items-center pb-12">
             <div
-              className="w-7 h-8 mr-2 inline-block"
               style={{
                 background: "linear-gradient(180deg, #FDD835 0%, #F8970D 100%)",
                 clipPath: "polygon(50% 0%, 100% 0%, 53% 100%, 0% 100%)",
               }}
+              className=" absolute hidden lg:block lg:left-0 lg:top-2 w-7 h-8 mr-2"
             ></div>
-            <div className="flex justify-between w-full">
-              <p className="text-[36px] text-white font-mullish font-bold">
+            <div className="flex justify-between w-full flex-col lg:flex-row gap-4 lg:gap-0">
+              <p className="text-[36px] text-white font-mullish font-bold lg:pl-8 ">
                 Get working capital for your business needs
               </p>
-              <button className="flex pl-[6px] pr-[16px] py-0 text-white bg-lightBlue300 font-mullish rounded-sm text-4 font-bold hover:bg-lightBlue500 transition-all duration-200 items-center gap-2">
+              <div className="mb-3 w-6 h-1 lg:hidden" style={{ background: "linear-gradient(180deg, #FDD835 0%, #F8970D 100%)"}}></div>
+              <button className="flex pl-[6px] pr-[16px] w-fit py-0 text-white bg-lightBlue300 font-mullish rounded-sm text-4 font-bold hover:bg-lightBlue500 transition-all duration-200 items-center gap-2">
                 <img alt="x" src={x} loading="lazy" class="" />
                 <span>Sign Up</span>
                 <svg

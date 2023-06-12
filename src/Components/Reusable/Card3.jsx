@@ -3,8 +3,8 @@ import quote from "../../assets/quotes-icon.40f48901.svg";
 
 export default function Section8() {
   return (
-        <div className="flex gap-20 h-[400px] pl-10">
-          <div class="flex items-center">
+        <div className="flex gap-4 lg:gap-20 pl-10 flex-col lg:flex-row">
+          <div class="flex items-center justify-center">
             <img
               alt="Subham Kumar"
               src="https://razorpay.com/build/browser/static/subham.042b5094.png"

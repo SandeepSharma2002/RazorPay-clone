@@ -8,13 +8,14 @@ export default function Section9() {
       style={{
         background: `url( ${bg})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
+        backgroundSize: "auto 100%",
+        backgroundPosition:"center"
       }}
       className=" relative bg-cover flex w-full h-full px-8 items-center justify-center font-mullish py-20"
     >
       <div className="flex flex-row w-[1080px]">
-        <div className="flex flex-col flex-1">
-          <div className="text-black text-[24px] mt-4 font-mullish font-bold">
+        <div className="flex flex-col justify-center flex-1 py-20 sm:py-14 md:py-0">
+          <div className="text-white text-[24px] mt-4 font-mullish font-bold">
             Supercharge your business with Razorpay
           </div>
           <div className="mt-2 mb-3  w-6 h-1 bg-greenLight"></div>
@@ -113,7 +114,7 @@ export default function Section9() {
             </button>
           </div>
         </div>
-        <img src={Sec} alt="hello" className="w-[240px] h-[282px] mt-4" />
+        <img src={Sec} alt="hello" className="w-[240px] h-[282px] mt-4 hidden lg:block" />
       </div>
     </section>
   );

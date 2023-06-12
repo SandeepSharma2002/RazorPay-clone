@@ -26,7 +26,7 @@ export default {
             marginTop: '0px'
          },
          '100%': {
-            marginTop: '-180%'
+            marginTop: '-100%'
          },
         }
       },

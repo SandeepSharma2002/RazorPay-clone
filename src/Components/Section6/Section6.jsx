@@ -9,26 +9,27 @@ export default function Section6() {
         background: `url( ${bg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundPosition:"center",
         zIndex: 0,
       }}
       className="relative w-full pt-48 mx-auto px-8 items-center justify-center font-mullish"
     >
       <div className="flex flex-col max-w-[1080px] mx-auto pb-40">
-        <div className="w-full items-center flex flex-col">
+        <div className="w-full md:items-center flex flex-col">
           <div className="text-[1.5rem] font-mullish font-bold text-white">
             Features
           </div>
           <div className="my-3 w-6 h-1 bg-greenLight"></div>
-          <div className="mx-auto max-w-[450px] text-center my-3 text-white">
+          <div className="md:mx-auto max-w-[450px] md:text-center my-3 text-white">
             Empower your business with all the right tools to accept online
             payments and provide the best customer experience
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-8 pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
             {
         data.map((data) =>{
                 return(
-          <div className="flex flex-col gap-3 px-4">
+          <div className="flex flex-col gap-3">
               <img
                 width="44"
                 height="44"

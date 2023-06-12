@@ -5,8 +5,8 @@ import section1bottom from "../../assets/section1bottom.png"
 export default function Section1() {
   return (
     <section className="relative w-full bg-deepBlue mx-auto px-8 items-center justify-center font-mullish mb-[230px]">
-      <div className="flex max-w-[1080px] mx-auto  pt-20">
-        <div className="flex flex-col max-w-[400px]">
+      <div className="flex max-w-[1080px] mx-auto flex-col lg:flex-row pt-20">
+        <div className="flex flex-col lg:max-w-[400px]">
           <div className="text-white text-[40px] mb-4 font-mullish font-bold">Power your finance, grow your business</div>
           <div className="my-4 w-6 h-1 bg-greenLight"></div>
           <div className="my-5 font-mullish text-grayText text-[16px]">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</div>
